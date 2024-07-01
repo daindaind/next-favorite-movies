@@ -1,4 +1,4 @@
-const Input = ({ value, onChange, placeholder, type, register, id }) => {
+const Input = ({ value, onChange, placeholder, type, register = () => {}, id }) => {
   return (
     <input
       value={value}
@@ -6,7 +6,7 @@ const Input = ({ value, onChange, placeholder, type, register, id }) => {
       placeholder={placeholder}
       type={type}
       {...register(id)}
-      className="bg-white border-2 border-stone-300 rounded-sm p-3 focus:outline-none"
+      className="w-full bg-white border-2 border-stone-200 rounded-lg p-2 text-sm focus:outline-none"
     />
   );
 };

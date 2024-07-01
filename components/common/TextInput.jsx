@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const TextInput = ({ register, id, placeholder }) => {
+const TextInput = ({ register = () => {}, id, placeholder }) => {
   const textareaRef = useRef(null);
 
   const handleInput = () => {
@@ -20,7 +20,7 @@ const TextInput = ({ register, id, placeholder }) => {
   }, []);
   return (
     <textarea
-      className="resize-none border border-stone-200 rounded p-3 h-full overflow-scroll overflow-x-hidden focus:outline-none"
+      className="resize-none border-2 text-sm border-stone-200 rounded-lg p-3 h-full overflow-scroll overflow-x-hidden focus:outline-none"
       ref={textareaRef}
       placeholder={placeholder}
       {...register(id)}
