@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import PostCard from './PostCard'
 import useIntersectionObsever from '@/hooks/useIntersectionObsever';
 
-function ThirdUI() {
+function ThirdUI({data}) {
   const ref = useRef(null);
   const isInViewport = useIntersectionObsever(ref);
   return (

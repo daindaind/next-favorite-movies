@@ -1,18 +1,24 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import HomeLayout from "@/layouts/HomeLayout";
 import FirstUI from "@/components/home/FirstUI";
 import SecondUI from "@/components/home/SecondUI";
 import ThirdUI from "@/components/home/ThirdUI";
+import { fetchMoviesList } from "@/api";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home({data}) {
   return (
     <main>
-      <FirstUI />
-      <SecondUI />
-      <ThirdUI />
+      <FirstUI data={data}/>
+      <SecondUI data={data}/>
+      <ThirdUI data={data}/>
     </main>
   );
+}
+
+export async function getServerSideProps() {
+  const response = await fetchMoviesList();
+
+  return {
+    props: {
+      data: response.data,
+    },
+  };
 }

@@ -5,4 +5,8 @@ const PAGE_URL = {
   POST: "/post",
 };
 
-export { PAGE_URL };
+const API_URL = {
+  PRODUCTS: '/products'
+}
+
+export { PAGE_URL, API_URL };
