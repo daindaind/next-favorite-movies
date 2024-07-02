@@ -25,6 +25,50 @@ module.exports = {
         "gray-07": "#181d24",
         "gray-08": "#151825",
       },
+      keyframes: {
+        slideDown: {
+          '0%': {
+            transform: 'translateY(-10px)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateY(0px)',
+            opacity: 1,
+          }
+        },
+        slideUp: {
+          '0%': {
+            transform: 'translateY(10px)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateY(0px)',
+            opacity: 1,
+          }
+        },
+        moveRightToLeft: {
+          '0%': {
+            right: '-750px'
+          },
+          '100%': {
+            right: '-650px'
+          }
+        },
+        moveLeftToRight: {
+          '0%': {
+            left: '-500px'
+          },
+          '100%': {
+            left: '-400px'
+          }
+        }
+      },
+      animation: {
+        slideDown: 'slideDown 1s ease-out',
+        slideUp: 'slideUp 1s ease-out',
+        moveRightToLeft: 'moveRightToLeft 1s ease-out',
+        moveLeftToRight: 'moveLeftToRight 1s ease-out'
+      }
     },
   },
   plugins: [],

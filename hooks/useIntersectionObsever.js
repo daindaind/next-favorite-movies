@@ -19,7 +19,7 @@ const useIntersectionObsever = (targetRef) => {
       });
     }
 
-    if (targetRef.current) {
+    if (targetRef?.current) {
       observer.current.observe(targetRef.current);
     }
 

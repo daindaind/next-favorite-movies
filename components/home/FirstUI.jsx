@@ -4,16 +4,16 @@ import MoviePoster from '../movies/MoviePoster'
 function FirstUI() {
   return (
     <div className='relative flex flex-col justify-center items-center overflow-hidden pb-[550px]'>
-      <h1 className='text-5xl font-bold text-default-text mt-20'>모두의 <span className='text-5xl font-bold text-cherry-pink'>인생작</span> 전부 여기에서.</h1>
-      <h3 className='text-xl font-medium text-default-text mt-3'>나만의 모든 영화, 드라마, 애니메이션</h3>
+      <h1 className='text-5xl font-bold text-default-text mt-20 animate-slideDown'>모두의 <span className='text-5xl font-bold text-cherry-pink'>인생작</span> 전부 여기에서.</h1>
+      <h3 className='text-xl font-medium text-default-text mt-3 animate-slideDown'>나만의 모든 영화, 드라마, 애니메이션</h3>
       <div className='flex flex-row gap-5 mt-20 w-[990px] h-[490px]'>
-         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] z-[300] mt-[30px]'>
+         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] z-[300] mt-[30px] animate-slideUp'>
             <MoviePoster />
          </div>
-         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] z-[300] '>
+         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] z-[300] animate-slideUp'>
             <MoviePoster />
          </div>
-         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] mt-[30px] z-[300]'>
+         <div className='flex justify-center items-center bg-white p-[30px] rounded-[30px] w-[970px] h-[470px] mt-[30px] z-[300] animate-slideUp'>
             <MoviePoster />
          </div>
       </div>
