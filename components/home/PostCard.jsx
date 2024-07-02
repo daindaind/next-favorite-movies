@@ -5,7 +5,7 @@ const img = 'https://i.namu.wiki/i/Qcu4AfVpgp5ddeU8y7Sf5_XYjdHwSHUQuycZFROAEYTIk
 
 function PostCard() {
   return (
-    <div className='relative flex flex-col gap-5 hover:transition-transform hover:cursor-pointer hover:scale-95 transform-gpu'>
+    <div className='relative flex flex-col gap-5 shadow-lg hover:transition-transform hover:cursor-pointer hover:scale-95 transform-gpu'>
       <Image alt="Poster" src={img} className="rounded-xl" width={250} height={360}/>
       <div className='absolute top-0 bottom-0 left-0 right-0 w-[250px] h-[360px] opacity-90 rounded-xl bg-gradient-to-t from-black'></div>
       <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center p-7 text-white text-sm font-light'>

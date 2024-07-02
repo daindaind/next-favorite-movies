@@ -1,9 +1,8 @@
 import { PAGE_URL } from "@/constants/router";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
-import logo from '../../public/logo.png';
+import { RiMovie2Line } from "react-icons/ri";
 
 function Navbar() {
   const currentPath = usePathname();
@@ -11,7 +10,10 @@ function Navbar() {
   return (
     <ul className="flex flex-row justify-center align-middle h-15 p-5 bg-light-white">
       <Link href={PAGE_URL.BASE}>
-        <p>LOGO</p>
+        <div  className="flex flex-row gap-2 items-center">
+        <RiMovie2Line size={30}/>
+        <p className="text-lg font-semibold tracking-widest">MOVIE</p>
+        </div>
       </Link>
       <div className="flex flex-row justify-end align-middle flex-1 gap-4">
         <li>
