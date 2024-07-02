@@ -6,7 +6,6 @@ import { RiMovie2Line } from "react-icons/ri";
 
 function Navbar() {
   const currentPath = usePathname();
-  console.log(currentPath)
   return (
     <ul className="flex flex-row justify-center align-middle h-15 p-5 bg-light-white">
       <Link href={PAGE_URL.BASE}>

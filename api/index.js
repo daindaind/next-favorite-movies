@@ -9,4 +9,8 @@ function fetchMoviesList() {
    return instance.get(`${API_URL.PRODUCTS}`);
 }
 
-export { fetchMoviesList };
+function fetchMovieDetail({ id }) {
+   return instance.get(`${API_URL.PRODUCTS}/${id}`);
+}
+ 
+export { fetchMoviesList, fetchMovieDetail };
