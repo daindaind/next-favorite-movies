@@ -11,6 +11,13 @@ const nextConfig = {
         // ** : 아무거나 올 수 있음
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "image.ajunews.com",
+        port: "",
+        // ** : 아무거나 올 수 있음
+        pathname: "/**",
+      },
     ],
   },
 };
